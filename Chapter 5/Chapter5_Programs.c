@@ -192,4 +192,176 @@ int main()
 }
  */
 
+// Patterns
+
+// Pattern 1
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+/* 
+int main()
+{
+    int n = 5;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+} */
+// Pattern 2
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+
+/* int main()
+{
+    int n = 5;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            printf("%d ",i);
+        }
+        printf("\n");
+    }
+
+} */
+
+// Pattern 3
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+/* int main()
+{
+    int n = 5;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
+
+} */
+
+// Pattern 4
+// 2
+// 3 4 
+// 4 5 6
+// 5 6 7 8
+// 6 7 8 9 10
+
+/* int main()
+{
+    int n = 5;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            printf("%d ",i+j);
+        }
+        printf("\n");
+    }
+
+} */
+
+// Pattern 5
+// 1
+// 0 1 
+// 1 0 1
+// 0 1 0 1
+// 1 0 1 0 1
+/* 
+int main()
+{
+    int n = 5;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            if((i+j) % 2 == 0){
+                printf("%d ",1);
+            }
+            else{
+                printf("%d ",0);
+            }
+        }
+        printf("\n");
+    }
+}
+ */
+// Pattern 6
+// 1
+// 2 3  
+// 4 5 6 
+// 7 8 9 10
+// 11 12 13 14 15
+
+/* int main()
+{
+    int n = 5;
+    int m=1;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            printf("%d   ",m++);
+        }
+        printf("\n");
+    }
+} */
+
+// Pattern 7
+// 5
+// 5 4   
+// 5 4 3 
+// 5 4 3 2
+// 5 4 3 2 1
+
+/* int main()
+{
+    int n = 5;
+    int m=1;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            printf("%d ",n+1-j);
+        }
+        printf("\n");
+    }
+} */
+// Pattern 8
+// 5
+// 4 4   
+// 3 3 3 
+// 2 2 2 2
+// 1 1 1 1 1
+
+int main()
+{
+    int n = 5;
+    int m=1;
+    for (int i=1;i<=5;i++)
+    {
+        for(int j =1;j<=i;j++)
+        {
+            printf("%d ",n+1-i);
+        }
+        printf("\n");
+    }
+}
+
 
