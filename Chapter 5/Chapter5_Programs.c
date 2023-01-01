@@ -350,7 +350,7 @@ int main()
 // 2 2 2 2
 // 1 1 1 1 1
 
-int main()
+/* int main()
 {
     int n = 5;
     int m=1;
@@ -362,6 +362,108 @@ int main()
         }
         printf("\n");
     }
-}
+} */
 
+// Pattern 9
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+
+
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i;j++)
+        {
+            printf("* ");
+        }
+            printf("\n");
+    }
+
+} */
+
+// Pattern 10
+// 1 1 1 1 1 
+// 2 2 2 2
+// 3 3 3
+// 4 4 
+// 5
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i;j++)
+        {
+            printf("%d ",i+1);
+        }
+            printf("\n");
+    }
+
+} */
+
+// Pattern 11
+// 1 2 3 4 5 
+// 1 2 3 4
+// 1 2 3
+// 1 2 
+// 1
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i;j++)
+        {
+            printf("%d ",j+1);
+        }
+            printf("\n");
+    }
+
+} */
+
+// Pattern 12
+// 5 5 5 5 5  
+// 4 4 4 4
+// 3 3 3
+// 2 2
+// 1
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i;j++)
+        {
+            printf("%d ",n-i);
+        }
+            printf("\n");
+    }
+
+}
+ */
+
+// Pattern 13
+// 5 4 3 4 5  
+// 5 4 3 4
+// 5 4 3
+// 5 4
+// 5
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i;j++)
+        {
+            printf("%d ",n-j);
+        }
+            printf("\n");
+    }
+
+} */
 
