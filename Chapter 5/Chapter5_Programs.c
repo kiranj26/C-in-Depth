@@ -467,3 +467,423 @@ int main()
 
 } */
 
+// Pattern 13
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    { 
+        for(int j=0;j<n-i;j++)
+        {
+        printf(" ");
+        }
+        for(int j=0;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+} */
+
+// Pattern 14
+//      1
+//     1 2
+//    1 2 3
+//   1 2 3 4
+//  1 2 3 4 5
+
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    { 
+        for(int j=0;j<n-i;j++)
+        {
+        printf(" ");
+        }
+        for(int j=0;j<=i;j++)
+        {
+            printf("%d ",i+1);
+        }
+        printf("\n");
+    }
+
+} */
+
+// Pattern 14
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+
+/* int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    { 
+        for(int j=0;j<n-i;j++)
+        {
+        printf(" ");
+        }
+        for(int j=0;j<=i;j++)
+        {
+            printf("*");          // space removed after *
+        }
+        printf("\n");
+    }
+
+} */
+
+// Pattern 16
+//      1
+//     1 2
+//    1 2 3
+//   1 2 3 4
+//  1 2 3 4 5
+/* 
+int main()
+{
+    int n=5;
+    for(int i=0;i<n;i++)
+    { 
+        for(int j=0;j<n-i;j++)
+        {
+        printf(" ");
+        }
+        for(int j=0;j<=i;j++)
+        {
+            printf("%d",i+1);       //Space removed after number
+        }
+        printf("\n");
+    }
+
+}
+ */
+// pattern 17
+//         * 
+//        ***  
+//       *****
+//      *******
+//     *********
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for( int j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=(2*i)-1;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+ */
+
+// pattern 18
+//         1 
+//        222  
+//       33333
+//      4444444
+//     555555555
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for( int j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=(2*i)-1;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+} */
+
+
+// pattern 19
+//         1 
+//        123 
+//       12345
+//      1234567
+//     123456579
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for( int j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=(2*i)-1;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+} */
+
+// pattern 20
+//         1 
+//        123 
+//       12345
+//      1234567
+//     123456579
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for( int j=1;j<=n-i;j++)
+        {
+            printf("  ");
+        }
+        for(int j=1;j<=(2*i)-1;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+ */
+
+// pattern 21
+//         1 
+//        232 
+//       34543
+//      4567654
+//     567898765
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        int m=i;
+        for( int j=1;j<=n-i;j++)
+        {
+            printf("  ");
+        }
+        for(int j=1;j<=(i);j++)
+        {
+            printf("%d ",m++);
+        }
+        m = m-2;
+        for(int j=1;j<=i-1;j++)
+        {
+            printf("%d ",m--);
+        }
+
+        printf("\n");
+    }
+} */
+
+
+// pattern 22
+//         5 
+//        545 
+//       54345
+//      5432345
+//     543212345
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        int m=n;
+        for( int j=1;j<=n-i;j++)
+        {
+            printf("  ");
+        }
+        for(int j=1;j<=(i);j++)
+        {
+            printf("%d ",m--);
+        }
+        m = m+2;
+        for(int j=1;j<=i-1;j++)
+        {
+            printf("%d ",m++);
+        }
+
+        printf("\n");
+    }
+} */
+
+// pattern 23
+//     *********
+//      *******
+//       *****
+//        ***  
+//         * 
+
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for(int j=0;j<i;j++){
+            printf(" ");
+        }
+        for(int j=1;j<=(2*(n-i))+1;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+} */
+
+// pattern 24
+// 555555555
+//  4444444
+//   33333
+//    222
+//     1
+
+/* int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for(int j=0;j<i;j++){
+            printf(" ");
+        }
+        for(int j=1;j<=(2*(n-i))+1;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+} */
+
+// Pattern 25
+// 123456789
+//  1234567
+//   12345
+//    123
+//     1
+
+/* int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for(int j=0;j<i;j++){
+            printf(" ");
+        }
+        for(int j=1;j<=(2*(n-i))+1;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+} */
+
+// Pattern 26
+//  5 6 7 8 9 8 7 6 5 
+//    4 5 6 7 6 5 4 
+//      3 4 5 4 3 
+//        2 3 2 
+//          1 
+
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        int m=n;
+        for( int j=1;j<=i;j++)
+        {
+            printf("  ");
+        }
+        m = n+1-i;
+        for(int j=1;j<=(n-i+1);j++)
+        {
+            printf("%d ",m++);
+        }
+        m = m-2;
+        for(int j=1;j<=n-i;j++)
+        {
+            printf("%d ",m--);
+        }
+
+        printf("\n");
+    }
+} */
+
+// Pattern 27
+//         * 
+//        ***  
+//       *****
+//      *******
+//     *********
+//      *******
+//       *****
+//        ***  
+//         * 
+/* 
+int main()
+{
+    int n=5;
+
+    for(int i=1; i<=n ;i++)
+    {
+        for(int j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=(2*i-1);j++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    for(int i=1;i<n;i++)
+    {
+        for(int j=1;j<= i; j++)
+        {
+            printf(" ");
+        }
+        for(int j=2;j< 2*(n-i)+1;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+} */
+
+
+
